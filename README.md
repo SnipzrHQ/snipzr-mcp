@@ -25,7 +25,7 @@ Claude Code, one command:
 claude mcp add --transport http snipzr https://mcp.snipzr.com/mcp --header "Authorization: Bearer YOUR_TOKEN"
 ```
 
-Claude on the web, desktop and mobile connects through a custom connector: open Settings, then Connectors, then Add custom connector, and enter the server address. If the dialog shows a Request headers section (rolling out in beta), set Authentication to None and add the header `authorization` with the value `Bearer YOUR_TOKEN`, including the word Bearer. Without that section, use Claude Code for now; direct sign-in from Claude is on our list.
+Claude on the web, desktop and mobile connects through a custom connector with no token to copy: open Settings, then Connectors, then Add custom connector, enter the server address and select Connect. Claude opens a Snipzr sign-in where you approve exactly what it may do, permission by permission. ChatGPT connects the same way in developer mode. Prefer a token? The Request headers option (beta) still takes `authorization` with the value `Bearer YOUR_TOKEN`.
 
 Cursor, VS Code and any other MCP client take the generic remote config:
 
