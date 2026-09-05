@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.snipzr/mcp",
+  "title": "Snipzr",
+  "description": "Create, manage and measure short links: branded domains, cookie-less analytics and QR codes",
+  "version": "1.9.0",
+  "websiteUrl": "https://www.snipzr.com/integrations/mcp",
+  "repository": {
+    "url": "https://github.com/SnipzrHQ/snipzr-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.snipzr.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer YOUR_SNIPZR_TOKEN (create one in Settings at snipzr.com; paid plans)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
