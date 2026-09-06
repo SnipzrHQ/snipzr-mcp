@@ -1,7 +1,5 @@
 # Snipzr MCP Server
 
-[![smithery badge](https://smithery.ai/badge/snipzr/mcp)](https://smithery.ai/servers/snipzr/mcp)
-
 The official [Snipzr](https://www.snipzr.com) MCP server. One hosted endpoint gives any MCP client thirteen tools to create, manage and measure short links: branded domains, batch creation, cookie-less analytics, campaign reports, UTM building and QR codes.
 
 ```
