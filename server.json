@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.snipzr/mcp",
   "title": "Snipzr",
-  "description": "Create, manage and measure short links: branded domains, cookie-less analytics and QR codes",
-  "version": "1.9.0",
+  "description": "Create, manage and measure short links: branded domains, cookie-less analytics, campaign reports and QR codes. Connect with a Snipzr sign-in (OAuth) or an API token",
+  "version": "1.11.3",
   "websiteUrl": "https://www.snipzr.com/integrations/mcp",
   "repository": {
     "url": "https://github.com/SnipzrHQ/snipzr-mcp",
@@ -16,8 +16,8 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer YOUR_SNIPZR_TOKEN (create one in Settings at snipzr.com; paid plans)",
-          "isRequired": true,
+          "description": "Optional: Bearer YOUR_SNIPZR_TOKEN for clients without a browser. Interactive clients sign in with OAuth instead (paid plans)",
+          "isRequired": false,
           "isSecret": true
         }
       ]
