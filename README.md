@@ -63,7 +63,7 @@ A client that only speaks stdio can bridge with `npx mcp-remote https://mcp.snip
 | `snipzr_build_utm_link` | Compose a UTM link that follows your workspace's conventions | `links:read` |
 | `snipzr_list_workspaces` | The workspaces this connection can act in, with the ids to pass as `workspaceId` | any |
 
-Every tool carries read-only or destructive annotations, so well-behaved clients ask before a delete and never before a read.
+Every tool carries read-only or destructive annotations, so well-behaved clients ask before a delete and never before a read, and every tool publishes an output schema and returns structured content beside the text, so agents read fields instead of parsing prose.
 
 ## Access model
 
