@@ -53,7 +53,7 @@ A client that only speaks stdio can bridge with `npx mcp-remote https://mcp.snip
 | `snipzr_get_link` | Read one link by its back-half | `links:read` |
 | `snipzr_update_link` | Change a destination or title | `links:write` |
 | `snipzr_delete_link` | Delete a link, with a confirmation gate | `links:write` |
-| `snipzr_get_link_stats` | Per-day clicks and scans, bots counted separately | `stats:read` |
+| `snipzr_get_link_stats` | Per-day clicks and scans, with bots, AI assistants and suspected automated traffic counted separately | `stats:read` |
 | `snipzr_get_campaign_report` | Clicks rolled up by campaign | `stats:read` |
 | `snipzr_get_usage` | Plan, remaining allowance and reset date | `usage:read` |
 | `snipzr_list_domains` | Your short domains and their status | `domains:read` |
