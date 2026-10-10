@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "snipzr",
+      "source": "registered",
+      "id": "REPLACE_WITH_THE_APP_ID_THE_PORTAL_ASSIGNS"
+    }
+  ]
+}

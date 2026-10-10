@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "snipzr",
+  "version": "1.0.0",
+  "description": "Create branded short links, UTM campaign links and QR codes, and read cookie-less click analytics in Snipzr (snipzr.com), the URL shortener, from ChatGPT.",
+  "author": {
+    "name": "Daviansoft, Inc.",
+    "email": "contact@snipzr.com",
+    "url": "https://www.snipzr.com"
+  },
+  "homepage": "https://www.snipzr.com/integrations/chatgpt",
+  "repository": "https://github.com/SnipzrHQ/snipzr-mcp",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "displayName": "Snipzr",
+        "shortDescription": "Short links, QR codes, stats",
+        "longDescription": "Snipzr (snipzr.com) is a URL shortener for marketers and developers. Connect it to manage your short links from ChatGPT in plain language.\n\nWhat you can do:\n• Create short links one at a time, or up to 100 in one call, on the default domain or on your own branded domain, with custom back-halves.\n• Build UTM campaign links that follow your workspace's UTM conventions, then shorten them.\n• Find, update and delete links. Updates and deletes are marked destructive, so ChatGPT asks you first.\n• Read clicks and QR scans per day for any link, with bot traffic counted separately, and campaign reports rolled up by utm_campaign.\n• Make scannable QR codes in PNG, JPEG or SVG with your colors, a caption and a center logo.\n• Check how many new links your account has left this period, and which workspaces and domains this connection can use.\n\nYou stay in control: when you connect, you sign in to Snipzr and choose the workspace ChatGPT may act in and what it may do, for example read-only. You can disconnect at any time in Snipzr Settings.\n\nRequirements: a Snipzr account on any plan, Free included. Campaign reports and larger link allowances are part of the paid plans.\n\nPrivacy: the plugin calls only Snipzr's own API and receives only what each request needs, such as the address you ask to shorten.",
+        "developerName": "Daviansoft, Inc.",
+        "category": "Productivity",
+        "capabilities": [
+          "Create short links on your own domain",
+          "Build UTM campaign links",
+          "Read click and QR scan analytics",
+          "Make QR codes",
+          "Update and delete links, with confirmation"
+        ],
+        "websiteURL": "https://www.snipzr.com",
+        "privacyPolicyURL": "https://www.snipzr.com/privacy-policy",
+        "termsOfServiceURL": "https://www.snipzr.com/terms-of-service",
+        "defaultPrompt": [
+          "Shorten https://example.com/launch with Snipzr and give me a QR code for it",
+          "How did my Snipzr links perform this week?",
+          "Build Snipzr campaign links for my newsletter, LinkedIn and X posts"
+        ],
+        "brandColor": "#E50000",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

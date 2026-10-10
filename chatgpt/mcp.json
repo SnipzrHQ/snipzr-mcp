@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "snipzr": {
+      "type": "streamable-http",
+      "url": "https://mcp.snipzr.com/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth2",
+            "client": {
+              "mode": "cimd",
+              "tokenEndpointAuthMethod": "none"
+            }
+          }
+        }
+      }
+    }
+  }
+}
