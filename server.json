@@ -3,7 +3,7 @@
   "name": "com.snipzr/mcp",
   "title": "Snipzr",
   "description": "Short links with branded domains, cookie-less analytics and QR codes. Sign in with OAuth or a token",
-  "version": "1.11.3",
+  "version": "1.32.0",
   "websiteUrl": "https://www.snipzr.com/integrations/mcp",
   "repository": {
     "url": "https://github.com/SnipzrHQ/snipzr-mcp",
@@ -16,7 +16,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Optional: Bearer YOUR_SNIPZR_TOKEN for clients without a browser. Interactive clients sign in with OAuth instead (paid plans)",
+          "description": "Optional: Bearer YOUR_SNIPZR_TOKEN for clients without a browser (paid plans). Interactive clients sign in with OAuth instead, on any plan",
           "isRequired": false,
           "isSecret": true
         }

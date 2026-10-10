@@ -6,7 +6,7 @@ The official [Snipzr](https://www.snipzr.com) MCP server. One hosted endpoint gi
 https://mcp.snipzr.com/mcp
 ```
 
-There is nothing to install or run. The server is remote (Streamable HTTP), stateless and available on every paid Snipzr plan. This repository is its public home: setup, the tool reference and the registry metadata. The server itself is part of the Snipzr platform, and its tools are thin adapters over the same handlers that serve the [public REST API](https://www.snipzr.com/docs/api), so the two surfaces always behave identically.
+There is nothing to install or run. The server is remote (Streamable HTTP), stateless and works on every Snipzr plan, Free included, when the client signs in with OAuth. Bearer tokens, for clients without a browser, need a paid plan. This repository is its public home: setup, the tool reference and the registry metadata. The server itself is part of the Snipzr platform, and its tools are thin adapters over the same handlers that serve the [public REST API](https://www.snipzr.com/docs/api), so the two surfaces always behave identically.
 
 ## Quick start
 
