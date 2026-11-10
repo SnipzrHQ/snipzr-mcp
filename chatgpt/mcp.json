@@ -9,8 +9,7 @@
           "auth": {
             "type": "oauth",
             "client": {
-              "mode": "cimd",
-              "tokenEndpointAuthMethod": "none"
+              "mode": "cimd"
             }
           }
         }
