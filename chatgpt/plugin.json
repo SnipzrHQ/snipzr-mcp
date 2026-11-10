@@ -13,7 +13,6 @@
   "license": "MIT",
   "extensions": {
     "com.openai": {
-      "apps": "./.app.json",
       "interface": {
         "displayName": "Snipzr",
         "shortDescription": "Short links, QR codes, stats",
@@ -28,6 +27,7 @@
           "Update and delete links, with confirmation"
         ],
         "websiteURL": "https://www.snipzr.com",
+        "supportURL": "https://www.snipzr.com/about-us#contact",
         "privacyPolicyURL": "https://www.snipzr.com/privacy-policy",
         "termsOfServiceURL": "https://www.snipzr.com/terms-of-service",
         "defaultPrompt": [
