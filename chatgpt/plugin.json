@@ -38,6 +38,56 @@
         "brandColor": "#E50000",
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Create one short link",
+              "prompt": "Shorten https://www.wikipedia.org/ with Snipzr.",
+              "tools_triggered": "snipzr_create_link",
+              "expected_behavior": "Returns the new short URL on snipzr.com and its destination https://www.wikipedia.org/."
+            },
+            {
+              "description": "Build and shorten UTM campaign links",
+              "prompt": "Create Snipzr campaign links for https://example.com/launch for my newsletter and LinkedIn, campaign fall-launch.",
+              "tools_triggered": "snipzr_build_utm_link, snipzr_create_links_batch",
+              "expected_behavior": "Two short links, one per channel, whose destinations carry utm_source, utm_medium and utm_campaign=fall-launch."
+            },
+            {
+              "description": "Read click statistics with bots counted separately",
+              "prompt": "How many clicks did all my Snipzr links get in the last 30 days, and how many were from bots?",
+              "tools_triggered": "snipzr_list_links, snipzr_get_link_stats",
+              "expected_behavior": "Per-link human clicks for the last 30 days, with bots, AI assistants and suspected automation counted separately."
+            },
+            {
+              "description": "Make a QR code with a caption",
+              "prompt": "Make a QR code for my most recent Snipzr link with the caption Scan to join.",
+              "tools_triggered": "snipzr_list_links, snipzr_get_qr_code",
+              "expected_behavior": "A PNG QR code with the caption Scan to join that opens the most recent short link when scanned."
+            },
+            {
+              "description": "Check the remaining link allowance",
+              "prompt": "How many new links can I still create in Snipzr this month?",
+              "tools_triggered": "snipzr_get_usage",
+              "expected_behavior": "The account's plan, how many new links remain this period and when the count resets."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated request: weather has nothing to do with links, so no Snipzr tool is called.",
+              "prompt": "What will the weather be in Paris tomorrow?"
+            },
+            {
+              "description": "The user names another link service, so Snipzr is not used.",
+              "prompt": "Shorten https://example.com with Bitly."
+            },
+            {
+              "description": "Snipzr does not send email, so no Snipzr tool is called and the user is told it cannot send messages.",
+              "prompt": "Email my newsletter subscribers the launch link."
+            }
+          ]
+        }
       }
     }
   }
