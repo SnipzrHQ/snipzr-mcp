@@ -19,7 +19,7 @@ claude mcp add --transport http snipzr https://mcp.snipzr.com/mcp
 claude mcp login snipzr
 ```
 
-Claude on the web, desktop and mobile: open Settings, then Connectors, then Add custom connector, enter the server address and select Connect. ChatGPT connects the same way in developer mode. Smithery, Glama and other directories connect through the same sign-in.
+Claude on the web, desktop and mobile: open Settings, then Connectors, then Add custom connector, enter the server address and select Connect. In ChatGPT, open [Snipzr in the plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6af364c6531c8191b54dda1f1988dc06) and select Install plugin. Smithery, Glama and other directories connect through the same sign-in.
 
 **2. Or use a token.** In [Settings](https://www.snipzr.com/settings), create a token and copy the secret (it is shown exactly once):
 
