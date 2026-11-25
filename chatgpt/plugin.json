@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "snipzr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create branded short links, UTM campaign links and QR codes, and read cookie-less click analytics in Snipzr (snipzr.com), the URL shortener, from ChatGPT.",
   "author": {
     "name": "Daviansoft, Inc.",
@@ -11,11 +11,38 @@
   "homepage": "https://www.snipzr.com/integrations/chatgpt",
   "repository": "https://github.com/SnipzrHQ/snipzr-mcp",
   "license": "MIT",
+  "keywords": [
+    "url shortener",
+    "link shortener",
+    "short links",
+    "short link",
+    "shorten url",
+    "shorten link",
+    "branded links",
+    "custom domain",
+    "custom short links",
+    "qr code",
+    "qr code generator",
+    "utm",
+    "utm builder",
+    "utm links",
+    "campaign links",
+    "link management",
+    "link analytics",
+    "link tracking",
+    "click analytics",
+    "click tracking",
+    "marketing",
+    "link kürzen",
+    "url kürzen",
+    "kurzlink",
+    "qr-code erstellen"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Snipzr",
-        "shortDescription": "Short links, QR codes, stats",
+        "shortDescription": "URL shortener, QR codes, stats",
         "longDescription": "Snipzr (snipzr.com) is a URL shortener for marketers and developers. Connect it to manage your short links from ChatGPT in plain language.\n\nWhat you can do:\n• Create short links one at a time, or up to 100 in one call, on the default domain or on your own branded domain, with custom back-halves.\n• Build UTM campaign links that follow your workspace's UTM conventions, then shorten them.\n• Find, update and delete links. Updates and deletes are marked destructive, so ChatGPT asks you first.\n• Read clicks and QR scans per day for any link, with bot traffic counted separately, and campaign reports rolled up by utm_campaign.\n• Make scannable QR codes in PNG, JPEG or SVG with your colors, a caption and a center logo.\n• Check how many new links your account has left this period, and which workspaces and domains this connection can use.\n\nYou stay in control: when you connect, you sign in to Snipzr and choose the workspace ChatGPT may act in and what it may do, for example read-only. You can disconnect at any time in Snipzr Settings.\n\nRequirements: a Snipzr account.\n\nPrivacy: the plugin calls only Snipzr's own API and receives only what each request needs, such as the address you ask to shorten.",
         "developerName": "Daviansoft, Inc.",
         "category": "Productivity",
@@ -87,6 +114,14 @@
               "prompt": "Email my newsletter subscribers the launch link."
             }
           ]
+        }
+      },
+      "publication": {
+        "translations": {
+          "de-DE": {
+            "subtitle": "URL-Shortener, QR-Codes, Stats",
+            "description": "Snipzr (snipzr.com) ist ein URL-Shortener für Marketing und Entwicklung. Verbinde ihn und verwalte deine Kurzlinks direkt aus ChatGPT, in ganz normaler Sprache.\n\nDas kannst du tun:\n• Kurzlinks erstellen, einzeln oder bis zu 100 auf einmal, auf der Standarddomain oder auf deiner eigenen Domain, mit eigenem Back-Half.\n• UTM-Kampagnenlinks bauen, die den UTM-Konventionen deines Workspace folgen, und sie kürzen.\n• Links finden, ändern und löschen. Änderungen und Löschungen sind als destruktiv markiert, deshalb fragt ChatGPT vorher nach.\n• Klicks und QR-Scans pro Tag für jeden Link lesen, mit separat gezählten Bots, dazu Kampagnenberichte nach utm_campaign.\n• Scanbare QR-Codes als PNG, JPEG oder SVG erstellen, mit deinen Farben, einer Beschriftung und einem Logo in der Mitte.\n• Prüfen, wie viele neue Links dein Konto in diesem Zeitraum noch hat und welche Workspaces und Domains diese Verbindung nutzen darf.\n\nDu behältst die Kontrolle: Beim Verbinden meldest du dich bei Snipzr an und wählst, in welchem Workspace ChatGPT handeln darf und was es dort darf, zum Beispiel nur lesen. In den Snipzr-Einstellungen kannst du die Verbindung jederzeit trennen.\n\nVoraussetzung: ein Snipzr-Konto.\n\nDatenschutz: Das Plugin ruft nur die eigene API von Snipzr auf und erhält nur, was die jeweilige Anfrage braucht, zum Beispiel die Adresse, die du kürzen möchtest."
+          }
         }
       }
     }
